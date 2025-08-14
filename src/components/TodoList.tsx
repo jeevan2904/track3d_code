@@ -4,8 +4,8 @@ import TodoItem from "./TodoItem";
 interface TodoListProps {
   todos: Todo[];
   onEdit: (id: string, text: string) => void;
-  onToggle: (id: string) => string;
-  onDelete: (id: string) => string;
+  onToggle: (id: string) => void;
+  onDelete: (id: string) => void;
 }
 
 export default function TodoList({
